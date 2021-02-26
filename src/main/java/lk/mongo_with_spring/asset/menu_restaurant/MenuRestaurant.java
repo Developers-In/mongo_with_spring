@@ -2,6 +2,7 @@ package lk.mongo_with_spring.asset.menu_restaurant;
 
 import lk.mongo_with_spring.asset.menu.Menu;
 import lk.mongo_with_spring.asset.menu_restaurant.enums.MenuRestaurantStatus;
+import lk.mongo_with_spring.asset.publish_menu_restaurant.PublishMenuRestaurant;
 import lk.mongo_with_spring.asset.restaurant.Restaurant;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -22,5 +23,7 @@ public class MenuRestaurant {
   private Restaurant restaurant;
 
   private List< MenuRestaurant > dishRestaurants;
+
+  private List< PublishMenuRestaurant > publishMenuRestaurants;
 
 }
