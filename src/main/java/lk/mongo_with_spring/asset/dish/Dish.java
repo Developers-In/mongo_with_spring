@@ -1,7 +1,7 @@
 package lk.mongo_with_spring.asset.dish;
 
 import lk.mongo_with_spring.asset.dish.enums.Format;
-import lk.mongo_with_spring.asset.ingredient.Ingredients;
+import lk.mongo_with_spring.asset.ingredient.Ingredient;
 import lk.mongo_with_spring.asset.restaurant_account.RestaurantAccount;
 import lk.mongo_with_spring.asset.review.Review;
 import lombok.Data;
@@ -27,6 +27,6 @@ public class Dish {
 
   private List<Review> reviews;
 
-  private List< Ingredients > ingredients;
+  private List< Ingredient > ingredients;
 
 }
