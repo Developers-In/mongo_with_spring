@@ -1,8 +1,7 @@
 package lk.mongo_with_spring.asset.publish_menu_restaurant_branch;
 
-import lk.mongo_with_spring.asset.menu_restaurant.MenuRestaurant;
 import lk.mongo_with_spring.asset.menu_restaurant_branch.MenuRestaurantBranch;
-import lk.mongo_with_spring.asset.publish_menu_restaurant.enums.FallBackMenuStatus;
+import lk.mongo_with_spring.asset.publish_menu_restaurant.enums.MenuFrequency;
 import lk.mongo_with_spring.asset.publish_menu_restaurant.enums.PublishFrequency;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -20,7 +19,7 @@ public class PublishMenuRestaurantBranch {
 
   private PublishFrequency publishFrequency;
 
-  private FallBackMenuStatus fallBackMenuStatus;
+  private MenuFrequency menuFrequency;
 
   private MenuRestaurantBranch menuRestaurantBranch;
 }
